@@ -1,0 +1,53 @@
+package Application;
+
+public class Trajet {
+	/* ENCAPSULATION DES VARIABLES COMPOSANTES DE LA CLASSE TRAJET */
+	private String villeDepart;
+	private String villeArrivee;
+	private double kilometrageArrivee, kilometrageDepart;
+	private Limousine limousine;
+
+	// CONSTRUCTOR
+	public Trajet(String villeDepart, String villeArrivee, double kilometrageDepart, double kilometrageArrivee, Limousine limousine) {
+		this.villeDepart = villeDepart;
+		this.villeArrivee = villeArrivee;
+		this.kilometrageArrivee = kilometrageArrivee;
+		this.kilometrageDepart = kilometrageDepart;
+		this.limousine = limousine;
+
+	}// Fin CONSTRUCTOR
+
+	/**************************************************************************************************/
+	/* LES GETTERS DE LA CLASSE TRAJET */
+	public String getLimousine_Trajet() {
+		return limousine.getImmatriculation();
+	}
+
+	public Limousine getLimousine() {
+		return limousine;
+	}
+
+	public String getVilleDepart() {
+		return villeDepart;
+	}
+
+	public String getVilleArrivee() {
+		return villeArrivee;
+	}
+
+	public double getKilometrageArrivee() {
+		return kilometrageArrivee;
+	}
+
+	public double getKilometrageDepart() {
+		return kilometrageDepart;
+	}
+
+	/**************************************************************************************************/
+	public String toString() {
+		String output = "******************************************************************************"
+				+ "\n.Depart: " + villeDepart + "\n.Arrivee: " + villeArrivee + "\n.Kilometrage de depart: " + kilometrageDepart
+				+ "\n.Kilometrage d'arrivee: " + kilometrageArrivee + "\n.Limousine Utilisée : " + limousine;
+		return output;
+	}
+}

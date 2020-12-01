@@ -1,0 +1,39 @@
+package Application;
+
+public class Limousine {
+	/* ENCAPSULATION DES VARIABLES COMPOSANTES DE LA CLASSE LINOUSINE */
+	private String immatriculation;
+	private double capaciteReservoir;
+	private String couleur;
+
+	// CONSTRUCTOR
+	public Limousine(String immatriculation, double capaciteReservoir, String couleur) {
+		this.immatriculation = immatriculation;
+		this.capaciteReservoir = capaciteReservoir;
+		this.couleur = couleur;
+
+	}// Fin CONSTRUCTOR
+
+	/**************************************************************************************************/
+	/* LES GETTERS ET SETTERS DE LA CLASSE TRAJET */
+	public String getImmatriculation() {
+		return immatriculation;
+	}
+
+	public double getCapaciteReservoir() {
+		return capaciteReservoir;
+	}
+
+	public String getCouleur() {
+		return couleur;
+	}
+
+	/**************************************************************************************************/
+
+	public String toString() {
+	String output = "\n\t\t. Immatriculation: " + immatriculation + "\n\t\t. Capacite du Reservoir: " + capaciteReservoir
+				+ " litres\n\t\t. Couleur: " + couleur;
+		return output;
+	}
+
+}

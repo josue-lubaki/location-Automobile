@@ -1,0 +1,13 @@
+package Application;
+
+public class ExceptionScope extends Exception {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	//Constructor
+	public ExceptionScope(){
+		super("\nLe Numero d'Identification saisi n'existe pas dans la liste des Chauffeurs de notre Compagnie");
+	}
+}

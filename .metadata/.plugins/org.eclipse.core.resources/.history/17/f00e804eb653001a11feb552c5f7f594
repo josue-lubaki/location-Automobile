@@ -1,0 +1,16 @@
+package Application;
+
+public class InputMismatchException extends Exception {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public InputMismatchException() {
+		super();
+		System.out.println("\t\t\tLe Format de Saisi est incorrect");
+		System.out.println("\t  Pour le bon fonctionnement, Veuillez Rédemarrer l'Application");
+	}
+
+}
